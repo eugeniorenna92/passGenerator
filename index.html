@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#">
+      <div>
+        <label for="length">Lunghezza Password: </label>
+
+        <input
+          type="number"
+          id="length"
+          name="length"
+          placeholder="4"
+          value="4"
+          max="16"
+          min="4"
+        />
+      </div>
+      <div>
+        <label for="upper">Caratteri Maiuscoli: (ABC)</label>
+        <input type="checkbox" id="upper" name="upper" />
+      </div>
+      <div>
+        <label for="number"> Numeri: (123)</label>
+        <input type="checkbox" name="number" id="number" />
+      </div>
+      <div>
+        <label for="special">Caratteri Speciali: </label>
+        <input type="text" name="special" id="special" value="!@#$%^&*()" />
+        <input type="checkbox" name="specialCheck" id="specialCheck" />
+      </div>
+      <div>
+        <label for="repeat">Ripeti Caratteri: </label>
+        <input type="checkbox" name="repeat" id="repeat" />
+      </div>
+
+      <button type="submit">Calcola</button>
+      <div>
+        <label for="password">Password: </label>
+        <input type="text" name="password" id="password" readonly />
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
